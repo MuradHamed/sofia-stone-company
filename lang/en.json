@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Home",
+        "gallery": "Stone Gallery",
+        "portfolio": "Portfolio",
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact",
+        "blog": "Blog"
+    },
+    "hero": {
+        "title": "Transform Your Space with Natural Stone",
+        "subtitle": "Premium stone cladding solutions for luxurious exteriors",
+        "cta": "Get Started"
+    },
+    "gallery": {
+        "title": "Our Stone Collection",
+        "subtitle": "Explore our premium selection of natural stones, each carefully chosen for its unique beauty and durability",
+        "filters": {
+            "all": "All",
+            "marble": "Marble",
+            "granite": "Granite",
+            "limestone": "Limestone",
+            "slate": "Slate",
+            "travertine": "Travertine"
+        }
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "Comprehensive stone solutions for your property",
+        "installation": {
+            "title": "Stone Façade Installation",
+            "description": "Professional installation of natural stone cladding for your property"
+        },
+        "consultation": {
+            "title": "Custom Design Consultation",
+            "description": "Expert guidance in selecting the perfect stone for your project"
+        },
+        "renovation": {
+            "title": "Renovation & Remodeling",
+            "description": "Complete exterior transformation with premium stone materials"
+        },
+        "maintenance": {
+            "title": "Maintenance & Sealing",
+            "description": "Professional maintenance services to preserve your stone's beauty"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch for a free consultation",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "phone": "Your Phone Number",
+            "message": "Your Message",
+            "submit": "Send Message"
+        }
+    }
+}
