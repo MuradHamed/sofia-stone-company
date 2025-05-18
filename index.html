@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sofia Stone Company - Premium natural stone cladding solutions for luxury homes and buildings">
     <meta name="author" content="MuradHamed">
-    <meta name="last-modified" content="2025-05-15 18:20:39">
+    <meta name="language" content="en">
+    <meta name="last-modified" content="2025-05-18 16:41:32">
+    <link rel="alternate" hreflang="en" href="https://yourdomain.com">
+    <link rel="alternate" hreflang="ar" href="https://yourdomain.com?lang=ar">
     
     <title>Sofia Stone Company - Premium Natural Stone Solutions</title>
     
@@ -18,51 +21,66 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
+
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Sofia Stone</a>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Sofia Stone Logo" class="logo-img" />
+            </a>
             <div class="nav-toggle" id="navToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Stone Gallery</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#home" data-translate="nav.home">Home</a></li>
+                <li><a href="#gallery" data-translate="nav.gallery">Stone Gallery</a></li>
+                <li><a href="#portfolio" data-translate="nav.portfolio">Portfolio</a></li>
+                <li><a href="#services" data-translate="nav.services">Services</a></li>
+                <li><a href="#about" data-translate="nav.about">About</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                <li><a href="#blog" data-translate="nav.blog">Blog</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    العربية
+                </button>
+            </div>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Transform Your Space with Natural Stone</h1>
-            <p>Premium stone cladding solutions for luxurious exteriors</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1 data-translate="hero.title">Transform Your Space with Natural Stone</h1>
+            <p data-translate="hero.subtitle">Premium stone cladding solutions for luxurious exteriors</p>
+            <a href="#contact" class="cta-button" data-translate="hero.cta">Get Started</a>
         </div>
     </header>
 
+
+
+    
     <!-- Stone Gallery Section -->
     <section id="gallery" class="stone-gallery">
         <div class="container">
             <div class="section-title">
-                <h2>Our Stone Collection</h2>
-                <p>Explore our premium selection of natural stones, each carefully chosen for its unique beauty and durability</p>
+                <h2 data-translate="gallery.title">Our Stone Collection</h2>
+                <p data-translate="gallery.subtitle">Explore our premium selection of natural stones, each carefully chosen for its unique beauty and durability</p>
             </div>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="marble">Marble</button>
-                <button class="filter-btn" data-filter="granite">Granite</button>
-                <button class="filter-btn" data-filter="limestone">Limestone</button>
-                <button class="filter-btn" data-filter="slate">Slate</button>
-                <button class="filter-btn" data-filter="travertine">Travertine</button>
+                <button class="filter-btn active" data-filter="all" data-translate="gallery.filters.all">All</button>
+                <button class="filter-btn" data-filter="marble" data-translate="gallery.filters.marble">Marble</button>
+                <button class="filter-btn" data-filter="granite" data-translate="gallery.filters.granite">Granite</button>
+                <button class="filter-btn" data-filter="limestone" data-translate="gallery.filters.limestone">Limestone</button>
+                <button class="filter-btn" data-filter="slate" data-translate="gallery.filters.slate">Slate</button>
+                <button class="filter-btn" data-filter="travertine" data-translate="gallery.filters.travertine">Travertine</button>
             </div>
             <div class="gallery-grid">
                 <!-- Gallery items will be dynamically loaded via JavaScript -->
@@ -74,8 +92,8 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Our Projects</h2>
-                <p>Discover how we've transformed properties with our expert stone installations</p>
+                <h2 data-translate="portfolio.title">Our Projects</h2>
+                <p data-translate="portfolio.subtitle">Discover how we've transformed properties with our expert stone installations</p>
             </div>
             <div class="portfolio-grid">
                 <!-- Portfolio items will be dynamically loaded via JavaScript -->
@@ -87,29 +105,29 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-title">
-                <h2>Our Services</h2>
-                <p>Comprehensive stone solutions for your property</p>
+                <h2 data-translate="services.title">Our Services</h2>
+                <p data-translate="services.subtitle">Comprehensive stone solutions for your property</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-home"></i>
-                    <h3>Stone Façade Installation</h3>
-                    <p>Professional installation of natural stone cladding for your property</p>
+                    <h3 data-translate="services.installation.title">Stone Façade Installation</h3>
+                    <p data-translate="services.installation.description">Professional installation of natural stone cladding for your property</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-pencil-ruler"></i>
-                    <h3>Custom Design Consultation</h3>
-                    <p>Expert guidance in selecting the perfect stone for your project</p>
+                    <h3 data-translate="services.consultation.title">Custom Design Consultation</h3>
+                    <p data-translate="services.consultation.description">Expert guidance in selecting the perfect stone for your project</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
-                    <h3>Renovation & Remodeling</h3>
-                    <p>Complete exterior transformation with premium stone materials</p>
+                    <h3 data-translate="services.renovation.title">Renovation & Remodeling</h3>
+                    <p data-translate="services.renovation.description">Complete exterior transformation with premium stone materials</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-spray-can"></i>
-                    <h3>Maintenance & Sealing</h3>
-                    <p>Professional maintenance services to preserve your stone's beauty</p>
+                    <h3 data-translate="services.maintenance.title">Maintenance & Sealing</h3>
+                    <p data-translate="services.maintenance.description">Professional maintenance services to preserve your stone's beauty</p>
                 </div>
             </div>
         </div>
@@ -119,25 +137,25 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Sofia Stone</h2>
-                <p>Your trusted partner in premium stone solutions</p>
+                <h2 data-translate="about.title">About Sofia Stone</h2>
+                <p data-translate="about.subtitle">Your trusted partner in premium stone solutions</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>With years of expertise in natural stone installation, Sofia Stone Company has established itself as a leader in premium exterior cladding solutions. Our commitment to quality and craftsmanship ensures that every project we undertake becomes a masterpiece.</p>
+                    <p data-translate="about.description">With years of expertise in natural stone installation, Sofia Stone Company has established itself as a leader in premium exterior cladding solutions. Our commitment to quality and craftsmanship ensures that every project we undertake becomes a masterpiece.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
                         <span class="stat-number">15+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-label" data-translate="about.stats.years">Years Experience</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">500+</span>
-                        <span class="stat-label">Projects Completed</span>
+                        <span class="stat-label" data-translate="about.stats.projects">Projects Completed</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Client Satisfaction</span>
+                        <span class="stat-label" data-translate="about.stats.satisfaction">Client Satisfaction</span>
                     </div>
                 </div>
             </div>
@@ -148,17 +166,17 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Get in touch for a free consultation</p>
+                <h2 data-translate="contact.title">Contact Us</h2>
+                <p data-translate="contact.subtitle">Get in touch for a free consultation</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-form">
                     <form id="contactForm">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Your Phone Number">
-                        <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <input type="text" name="name" data-translate="contact.form.name" placeholder="Your Name" required>
+                        <input type="email" name="email" data-translate="contact.form.email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" data-translate="contact.form.phone" placeholder="Your Phone Number">
+                        <textarea name="message" data-translate="contact.form.message" placeholder="Your Message" required rows="5"></textarea>
+                        <button type="submit" class="submit-btn" data-translate="contact.form.submit">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-info">
@@ -194,8 +212,8 @@
     <section id="blog" class="blog">
         <div class="container">
             <div class="section-title">
-                <h2>Stone Care Tips & News</h2>
-                <p>Stay updated with the latest trends and maintenance tips</p>
+                <h2 data-translate="blog.title">Stone Care Tips & News</h2>
+                <p data-translate="blog.subtitle">Stay updated with the latest trends and maintenance tips</p>
             </div>
             <div class="blog-grid">
                 <!-- Blog posts will be dynamically loaded -->
@@ -208,25 +226,25 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Sofia Stone</h3>
-                    <p>Premium Natural Stone Solutions</p>
+                    <img src="images/logo.png" alt="Sofia Stone Logo" class="footer-logo-img">
+                    <p data-translate="footer.tagline">Premium Natural Stone Solutions</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4 data-translate="footer.quicklinks">Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" data-translate="nav.home">Home</a></li>
+                        <li><a href="#gallery" data-translate="nav.gallery">Gallery</a></li>
+                        <li><a href="#services" data-translate="nav.services">Services</a></li>
+                        <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h4>Follow Us</h4>
+                    <h4 data-translate="footer.follow">Follow Us</h4>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-houzz"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Houzz"><i class="fab fa-houzz"></i></a>
                     </div>
                 </div>
             </div>
